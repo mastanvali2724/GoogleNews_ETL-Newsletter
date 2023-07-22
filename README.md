@@ -111,10 +111,3 @@ The architecture of the project consists of the following components:
 
 # Conclusion
 This project demonstrates how to set up an automated ETL pipeline to collect news data from Google News and upload it to an S3 bucket. By using Airflow to schedule the pipeline and AWS Lambda to send email notifications, the workflow can be fully automated and require minimal manual intervention.
-
-
-
-
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=eminent02&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
-<img height="300em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eminent02&langs_count=5&theme=tokyonight" />
