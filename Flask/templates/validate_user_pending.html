@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{%block title%} 
+Validating User
+{% endblock %}
+{% block body %}
+<script>
+    alert('Please verify your email in your inbox')
+</script>
+<div id="write">
+    <p>The email is: {{ email }}</p>
+    <p>The status is {{ status }}</p>
+</div>
+
+<a href="{{ url_for('verify_user_email') }}"><input type="button" value="Check your status"></a>
+{% endblock %}

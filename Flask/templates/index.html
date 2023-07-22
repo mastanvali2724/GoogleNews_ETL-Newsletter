@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{%block title%} 
+Subscribe Newsletter
+{% endblock %}
+{% block body %}
+<form action="{{ url_for('validate_user') }}" method="post">
+
+    <label for="name">Name</label>
+    <div class="form-group">
+    <input type="text" class="form-control" id="name_id" name="name" placeholder="Enter your Name" required>
+    </div>
+    
+    <label for="email">Email</label>
+    <div class="form-group">
+    <input type="email" class="form-control" id="email_id" name="email" required placeholder="Enter Your email">
+    <small id="emailHelpId" class="form-text text-muted">You will recieve the newsletter to this email</small>
+    </div>
+    
+    <div class="btn-group">
+        <button  class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                    Select News Category
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input name="sports" type="checkbox" class="form-check-input" name="sports" id="sports" value="1">
+                <input type='hidden' value='0' name='sports'>
+                Sports <br>
+                <input name="politics" type="checkbox" class="form-check-input" name="politics" id="politics" value="1">
+                <input type='hidden' value='0' name='politics'>
+                Politics <br>
+                <input name="business" type="checkbox" class="form-check-input" name="business" id="business" value="1">
+                <input type='hidden' value='0' name='business'>
+                Business <br>
+              </label>
+            </div>
+        </div>
+    </div> <br><br>
+    <label for="others">Others</label>
+    <div class="form-group">
+    <input type="text" class="form-control" id="others_id" name="others" placeholder="Enter other news category you are interested" >
+    <small id="emailHelpId" class="form-text text-muted">Enter in comma separated format ex:(weather,jobs,regional,stock market)</small>
+    </div>
+    
+    <button type="submit" class="btn btn-success btn-sm btn-block">Submit</button>
+    <br>
+    
+    </form>
+{% endblock %}
