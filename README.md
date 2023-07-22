@@ -44,10 +44,10 @@ The architecture of the project consists of the following components:
 ### Run the Flask app.
 * Clone this repo and run application.py file.
 * You will see a Newsletter subscription form. Enter your details and submit.
-![subscription_form](./Images/newsletter_form.PNG)
+![subscription_form](./Images/newsletter_form.png)
 * You will receive a verification email to your inbox. Go ahead and verify your email.
 * Check your status by clicking on check status button.
-![success_message](./Images/success.PNG)
+![success_message](./Images/success.png)
 * Now you have successfully subscribed to the Newsletter.
 * The user input data will be stored in RDS database.
 * You can connect to DB using Mysql Workbench and validate.
